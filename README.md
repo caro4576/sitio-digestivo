@@ -38,7 +38,7 @@ Sitio web institucional responsive desarrollado en HTML y CSS para presentar los
 ## 🚀 Deploy
 
 El sitio está publicado en GitHub Pages:  
-🔗
+🔗https://caro4576.github.io/sitio-digestivo/
 
 ---
 
