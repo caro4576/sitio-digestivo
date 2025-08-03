@@ -70,6 +70,7 @@ main {
   gap: 1rem;
   flex-wrap: wrap;
   align-items: center;
+
 }
 
 .nav-links a {
@@ -77,13 +78,16 @@ main {
   font-weight: bold;
   text-decoration: none;
   padding: 0.5rem 0.8rem;
-  border-radius: 5px;
-  transition: 0.3s;
+  border: 2px solid var(--colorPrimario);
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease
+ 
 }
 
 .nav-links a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: var(--colorB);
+   color: var(--colorSecundario);
+  background-color: var(--colorPrimario);
+
 }
 
 @media (max-width: 768px) {
