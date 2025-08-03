@@ -386,8 +386,8 @@ img {
 }
 
 #contacto a:hover {
-  color: var(--colorPrimario);
-  text-decoration: underline;
+  color: var(--colorSecundario);
+ 
 }
 
 .btn-wp {
