@@ -4,174 +4,226 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>IDEB - Intituto de Diagnóstico Endoscópico</title>
-      <link rel="stylesheet" href="css/style.css" />
+      <title>IDEB - Instituto de Diagnóstico Endoscópico Balcarce</title>
       <link rel="stylesheet" href="css/normalize.css" />
+      <link rel="stylesheet" href="css/style.css" />
    </head>
 
    <body>
+
       <div class="direccion-top">
-         <p>Nos encontramos en <strong>Calle 17 N°832, Balcarce, Buenos Aires</strong>.</p>
+         <p>📍 Calle 17 N°832, Balcarce, Buenos Aires</p>
       </div>
-      
+
       <header class="main-header">
          <img class="logo" src="img/logo.png" alt="Logo IDEB">
-      
+
          <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
-      
+
          <nav class="nav-links">
             <a href="#nosotros">Nosotros</a>
             <a href="#estudios">Estudios</a>
             <a href="#profesionales">Profesionales</a>
-            <a href="#descargas">Descargas</a>
-            <a href="#ubicacion-horarios">Ubicación y Horarios</a>
+            <a href="#descargas">Pacientes</a>
+            <a href="#ubicacion-horarios">Ubicación</a>
             <a href="#contacto">Contacto</a>
          </nav>
       </header>
 
-      <main class="container ">
-         <section id="nosotros" class="contenido-primario">
-            <div class="nosotros">
-               <article>
-                  <h2>Centro especializado en diagnóstico digestivo</h2>
-                  <p>Brindamos un servicio integral con tecnología de última generación y profesionales capacitados.</p>
-                  <h3>Nuestra Filosofía</h3>
-                  <p>Atención personalizada con enfoque en diagnóstico preciso y seguimiento continuo.</p>
-                  <h3>Tecnología</h3>
-                  <p>Endoscopía y colonoscopía de alta definición para visualizar detalladamente el tracto digestivo.
+      <main class="container">
+
+         <!-- HERO -->
+         <section class="hero-premium">
+            <div class="hero-texto">
+               <p class="hero-kicker">Centro especializado en salud digestiva</p>
+               <h1>Diagnóstico digestivo preciso y confiable en Balcarce</h1>
+               <p class="hero-subtexto">
+                  Atención médica especializada con tecnología de alta definición, equipo profesional y un enfoque
+                  centrado en cada paciente.
+               </p>
+
+               <div class="hero-botones">
+                  <a href="https://wa.me/2266441520" target="_blank" class="btn-principal">Solicitar turno</a>
+                  <a href="#estudios" class="btn-secundario">Ver estudios</a>
+               </div>
+
+               <div class="hero-datos">
+                  <span>🏥 Atención especializada</span>
+                  <span>📍 Balcarce</span>
+                  <span>🕒 Turnos programados</span>
+               </div>
+            </div>
+
+            <div class="hero-imagen">
+               <img src="img/director.png" alt="Equipo médico IDEB">
+            </div>
+         </section>
+
+         <!-- NOSOTROS -->
+         <section id="nosotros" class="section-premium fade-in-up">
+            <div class="section-header">
+               <p class="section-kicker">Quiénes somos</p>
+               <h2>Un centro médico orientado al diagnóstico digestivo de calidad</h2>
+            </div>
+
+            <div class="grid-2">
+               <div>
+                  <p>
+                     En IDEB brindamos un servicio integral para el diagnóstico, seguimiento y prevención de
+                     enfermedades digestivas, combinando tecnología avanzada, experiencia médica y atención
+                     personalizada.
                   </p>
-                  <h3>Equipo Profesional</h3>
-                  <p>Anestesiólogo, Gastroenterólogos, Nutricionista, Clinicos y Personal de Enfermería calificado.</p>
-                  <h3>Cobertura</h3>
-                  <p>Trabajamos con todas las obras sociales y particulares </p>
-                  <h3>Nuestros Servicios</h3>
-                  <div class="servicios">
-                        <p>Evaluaciones preventivas del sistema digestivo.</p>
-                        <p>Diagnóstico y tratamiento de enfermedades gastrointestinales.</p>
-                        <p>Seguimiento de enfermedades crónicas digestivas.</p>  
-                  </div>
-            </div>
-            </article>
-            <hr>
-            <div class="director">
-               <h2>Director del Instituto </h2>
-               <h3>Dr. Gonzalo Viera</h3>
-               <img src="img/director.png" alt="imagen del director del instituto">
+                  <p>
+                     Nuestro compromiso es ofrecer una experiencia médica clara, profesional y confiable para cada
+                     paciente.
+                  </p>
+               </div>
+
+               <div class="beneficios-box">
+                  <div class="beneficio-item">✔ Atención personalizada</div>
+                  <div class="beneficio-item">✔ Tecnología de alta definición</div>
+                  <div class="beneficio-item">✔ Equipo interdisciplinario</div>
+                  <div class="beneficio-item">✔ Obras sociales y particulares</div>
+               </div>
             </div>
          </section>
 
-
-
-
-         <section id="estudios">
-            <h2>Estudios</h2>
-            <div class="estudio-card" onclick="openModal('modal1')">
-               <h3>Gastroscopia (Endoscopía Digestiva Alta)</h3>
-               <p>Estudio del esófago, estómago y duodeno.</p>
+         <!-- DIRECTOR -->
+         <section class="section-premium director-premium fade-in-up">
+            <div class="director-info">
+               <p class="section-kicker">Dirección médica</p>
+               <h2>Dr. Gonzalo Viera</h2>
+               <p>
+                  Director del instituto y profesional con experiencia en diagnóstico digestivo, procedimientos
+                  endoscópicos y atención integral del paciente.
+               </p>
             </div>
-            <div class="estudio-card" onclick="openModal('modal2')">
-               <h3>Colonoscopía</h3>
-               <p>Exploración completa del colon.</p>
+            <div class="director-img">
+               <img src="img/director.png" alt="Dr. Gonzalo Viera">
             </div>
-            <div class="estudio-card" onclick="openModal('modal3')">
-               <h3>Extracción de Pólipos</h3>
-               <p>Procedimiento terapéutico en estudios endoscópicos.</p>
-            </div>
-            <div class="estudio-card" onclick="openModal('modal4')">
-               <h3>Test de Aire Espirado</h3>
-               <p>Diagnóstico de intolerancias y sobrecrecimiento bacteriano.</p>
+         </section>
+
+         <!-- ESTUDIOS -->
+      <section id="estudios" class="section-premium estudios-section fade-in-up">
+            <div class="section-header">
+               <p class="section-kicker">Servicios médicos</p>
+               <h2>Estudios y procedimientos</h2>
+               <p>
+                  Realizamos prácticas diagnósticas y terapéuticas orientadas al cuidado de la salud digestiva.
+               </p>
             </div>
 
-            <div id="modal1" class="modal">
-               <div class="modal-content"><span class="close" onclick="closeModal('modal1')">&times;</span>
-                  <h3>Endoscopía Digestiva Alta</h3>
-                  <div class="modal-text collapsed" id="modal1-text">
-                     <h4>¿Por qué realizar este estudio?</h4>
-                     <p>Sirve para diagnosticar y tratar enfermedades del esófago, estómago y duodeno. Permite tomar
-                        biopsias sin dolor y
-                        aplicar tratamientos como detener hemorragias, tratar várices o extraer cuerpos extraños.</p>
-                     <h4>¿En qué consiste?</h4>
-                     <p>Se introduce un tubo flexible con cámara por la boca para explorar el tracto digestivo superior.
-                     </p>
-                     <h4>¿Necesita preparación?</h4>
-                     <p>Solo requiere ayuno.</p>
-                     <h4>¿Lleva anestesia?</h4>
-                     <p>No es doloroso. Puede realizarse con anestesia local en la garganta o sedación intravenosa.</p>
-                  </div>
-
-                  <button class="toggle-text-btn" onclick="toggleText('modal1-text', this)">Ver más</button>
+            <div class="estudios-grid">
+               <div class="estudio-card" onclick="openModal('modal1')">
+                  <h3>Gastroscopía</h3>
+                  <p>Evaluación del esófago, estómago y duodeno.</p>
                </div>
-            </div>
-            <div id="modal2" class="modal">
-               <div class="modal-content"><span class="close" onclick="closeModal('modal2')">&times;</span>
+
+               <div class="estudio-card" onclick="openModal('modal2')">
                   <h3>Colonoscopía</h3>
-                  <div class="modal-text collapsed" id="modal2-text">
-                     <h4>¿Por qué realizar este estudio?</h4>
-                     <p>Es el método más efectivo para detectar pólipos y prevenir el cáncer colorrectal. Permite
-                        observar
-                        todo el colon, tomar
-                        biopsias y realizar tratamientos como la extracción de pólipos.</p>
-                     <h4>¿En qué consiste?</h4>
-                     <p>Se introduce un tubo flexible por el ano para explorar el intestino grueso. El estudio dura unos
-                        20
-                        minutos.</p>
-                     <h4>¿Necesita preparación?</h4>
-                     <p>Sí, requiere una limpieza previa del intestino. Ver preparación</p>
-                     <h4>¿Lleva anestesia?</h4>
-                     <p>Se realiza con sedación. Se solicitan estudios prequirúrgicos y es necesario asistir con
-                        acompañante.</p>
-                  </div>
-                  <button class="toggle-text-btn" onclick="toggleText('modal2-text', this)">Ver más</button>
+                  <p>Exploración integral del colon.</p>
                </div>
-            </div>
-            <div id="modal3" class="modal">
-               <div class="modal-content"><span class="close" onclick="closeModal('modal3')">&times;</span>
-                  <h3>Extracción de Pólipos</h3>
-                  <div class="modal-text collapsed" id="modal3-text">
-                     <h4>¿Por qué realizar este estudio?</h4>
-                     <p>Es la resección de un pólipo para prevenir o detectar precozmente cáncer. El tejido se analiza
-                        para
-                        descartar células
-                        malignas.</p>
-                     <h4>¿En qué consiste?</h4>
-                     <p>Se utiliza un lazo de alambre que corta el pólipo mediante corriente eléctrica, a través del
-                        endoscopio.</p>
-                     <h4>¿Necesita preparación?</h4>
-                     <p>Sí. Depende si es por vía alta (ayuno) o baja (preparación similar a la colonoscopía). Ver
-                        preparación</p>
-                     <h4>¿Lleva anestesia?</h4>
-                     <p>Se realiza con sedación. Requiere estudios prequirúrgicos y venir acompañado.</p>
-                  </div>
-                  <button class="toggle-text-btn" onclick="toggleText('modal3-text', this)">Ver más</button>
+
+               <div class="estudio-card" onclick="openModal('modal3')">
+                  <h3>Extracción de pólipos</h3>
+                  <p>Procedimiento terapéutico endoscópico.</p>
                </div>
-            </div>
-            <div id="modal4" class="modal">
-               <div class="modal-content"><span class="close" onclick="closeModal('modal4')">&times;</span>
-                  <h3>Test de Aire Espirado</h3>
-                  <div class="modal-text collapsed" id="modal4-text">
-                     <h4>¿Por qué realizar este estudio?</h4>
-                     <p>Sirve para detectar el sobrecrecimiento bacteriano en el intestino delgado (SIBO), una causa
-                        frecuente de síntomas
-                        digestivos como hinchazón, gases, diarrea o dolor abdominal.</p>
-                     <h4>¿En qué consiste?</h4>
-                     <p>El paciente sopla en intervalos regulares dentro de tubos especiales después de ingerir una
-                        solución (generalmente
-                        lactulosa o glucosa). Se analizan los gases eliminados para identificar fermentación anormal.
-                     </p>
-                     <h4>¿Necesita preparación?</h4>
-                     <p>Sí, requiere una dieta especial los días previos y ayuno antes del estudio. Ver preparación</p>
-                     <h4>¿Lleva anestesia?</h4>
-                     <p>No. Es un estudio no invasivo, simple e indoloro.</p>
-                  </div>
-                  <button class="toggle-text-btn" onclick="toggleText('modal4-text', this)">Ver más</button>
+
+               <div class="estudio-card" onclick="openModal('modal4')">
+                  <h3>Test de aire espirado</h3>
+                  <p>Detección de intolerancias y SIBO.</p>
                </div>
             </div>
          </section>
 
-         <section id="descargas">
-            <h2>Intructivos Descargables</h2>
-            <ul>
-               <li><a href="pdf/CONSENTIMIENTO INFORMADO VEDA.pdf" download>Consentimiento Videoendoscopia Alta</a></li>
+         <!-- MODALES -->
+         <div id="modal1" class="modal">
+            <div class="modal-content">
+               <span class="close" onclick="closeModal('modal1')">&times;</span>
+               <h3>Gastroscopía (Endoscopía Digestiva Alta)</h3>
+               <div class="modal-text collapsed" id="modal1-text">
+                  <h4>¿Por qué realizar este estudio?</h4>
+                  <p>Sirve para diagnosticar y tratar enfermedades del esófago, estómago y duodeno. Permite tomar
+                     biopsias sin dolor y aplicar tratamientos como detener hemorragias, tratar várices o extraer
+                     cuerpos extraños.</p>
+                  <h4>¿En qué consiste?</h4>
+                  <p>Se introduce un tubo flexible con cámara por la boca para explorar el tracto digestivo superior.
+                  </p>
+                  <h4>¿Necesita preparación?</h4>
+                  <p>Solo requiere ayuno.</p>
+                  <h4>¿Lleva anestesia?</h4>
+                  <p>No es doloroso. Puede realizarse con anestesia local en la garganta o sedación intravenosa.</p>
+               </div>
+               <button class="toggle-text-btn" onclick="toggleText('modal1-text', this)">Ver más</button>
+            </div>
+         </div>
+
+         <div id="modal2" class="modal">
+            <div class="modal-content">
+               <span class="close" onclick="closeModal('modal2')">&times;</span>
+               <h3>Colonoscopía</h3>
+               <div class="modal-text collapsed" id="modal2-text">
+                  <h4>¿Por qué realizar este estudio?</h4>
+                  <p>Es el método más efectivo para detectar pólipos y prevenir el cáncer colorrectal. Permite observar
+                     todo el colon, tomar biopsias y realizar tratamientos como la extracción de pólipos.</p>
+                  <h4>¿En qué consiste?</h4>
+                  <p>Se introduce un tubo flexible por el ano para explorar el intestino grueso. El estudio dura
+                     aproximadamente 20 minutos.</p>
+                  <h4>¿Necesita preparación?</h4>
+                  <p>Sí, requiere una limpieza previa del intestino.</p>
+                  <h4>¿Lleva anestesia?</h4>
+                  <p>Se realiza con sedación y es necesario asistir con acompañante.</p>
+               </div>
+               <button class="toggle-text-btn" onclick="toggleText('modal2-text', this)">Ver más</button>
+            </div>
+         </div>
+
+         <div id="modal3" class="modal">
+            <div class="modal-content">
+               <span class="close" onclick="closeModal('modal3')">&times;</span>
+               <h3>Extracción de Pólipos</h3>
+               <div class="modal-text collapsed" id="modal3-text">
+                  <h4>¿Por qué realizar este estudio?</h4>
+                  <p>Permite resecar pólipos y prevenir o detectar precozmente lesiones de riesgo.</p>
+                  <h4>¿En qué consiste?</h4>
+                  <p>Se utiliza instrumental endoscópico especializado para extraer la lesión de forma segura.</p>
+                  <h4>¿Necesita preparación?</h4>
+                  <p>Sí, dependiendo de la vía del procedimiento.</p>
+                  <h4>¿Lleva anestesia?</h4>
+                  <p>Se realiza con sedación.</p>
+               </div>
+               <button class="toggle-text-btn" onclick="toggleText('modal3-text', this)">Ver más</button>
+            </div>
+         </div>
+
+         <div id="modal4" class="modal">
+            <div class="modal-content">
+               <span class="close" onclick="closeModal('modal4')">&times;</span>
+               <h3>Test de Aire Espirado</h3>
+               <div class="modal-text collapsed" id="modal4-text">
+                  <h4>¿Por qué realizar este estudio?</h4>
+                  <p>Ayuda a detectar sobrecrecimiento bacteriano (SIBO) e intolerancias digestivas.</p>
+                  <h4>¿En qué consiste?</h4>
+                  <p>Se analiza el aire espirado en diferentes intervalos luego de ingerir una solución específica.</p>
+                  <h4>¿Necesita preparación?</h4>
+                  <p>Sí, requiere una preparación previa específica.</p>
+                  <h4>¿Lleva anestesia?</h4>
+                  <p>No. Es un estudio simple, no invasivo e indoloro.</p>
+               </div>
+               <button class="toggle-text-btn" onclick="toggleText('modal4-text', this)">Ver más</button>
+            </div>
+         </div>
+
+         <!-- PACIENTES -->
+         <section id="descargas" class="section-premium fade-in-up">
+            <div class="section-header">
+               <p class="section-kicker">Información para pacientes</p>
+               <h2>Instructivos y documentación</h2>
+               <p>Accedé a indicaciones y documentos necesarios antes de tu estudio.</p>
+            </div>
+
+            <ul class="descargas-lista">
+               <li><a href="pdf/CONSENTIMIENTO INFORMADO VEDA.pdf" download>Consentimiento Videoendoscopía Alta</a></li>
                <li><a href="pdf/CONSENTIMIENTO INFORMADO VCC.pdf" download>Consentimiento Videocolonoscopía</a></li>
                <li><a href="pdf/PREPARACION PARA VCC.pdf" download>Preparación Videocolonoscopía</a></li>
                <li><a href="pdf/INTRUCTIVO TEST DE AIRE ASPIRADO SIBO.pdf" download>Indicaciones Test de Aire
@@ -179,38 +231,51 @@
                <li><a href="pdf/INSTRUCCIONES Y CUIDADOS PARA EL ALTA.pdf" download>Cuidados post procedimiento</a></li>
             </ul>
          </section>
-         <section id="profesionales">
-            <h2>Nuestro Equipo De Profesionales</h2>
+
+         <!-- EQUIPO -->
+         <section id="profesionales" class="section-premium fade-in-up">
+            <div class="section-header">
+               <p class="section-kicker">Equipo profesional</p>
+               <h2>Staff médico y profesionales</h2>
+               <p>Un equipo interdisciplinario dedicado a brindar atención segura, clara y profesional.</p>
+            </div>
+
             <div class="profesionales-container">
                <div class="prof-card">
                   <h4>Médico Anestesiólogo</h4>
-                  <img src="img/anestesiologo.png" alt="foto del anestesiologo">
+                  <img src="img/anestesiologo.png" alt="foto del anestesiólogo">
                   <p>Dr. Gonzalo Viera</p>
                </div>
+
                <div class="prof-card">
                   <h4>Gastroenteróloga Endoscopista</h4>
-                  <img src="img/meli.png" alt="foto de la gastroenterologa">
+                  <img src="img/meli.png" alt="foto de la gastroenteróloga">
                   <p>Dra. Melisa Hidalgo</p>
                </div>
+
                <div class="prof-card">
                   <h4>Gastroenterólogo Endoscopista</h4>
-                  <img src="img/jose.png" alt="foto del gastroenterologo">
+                  <img src="img/jose.png" alt="foto del gastroenterólogo">
                   <p>Dr. José Balsamo</p>
                </div>
-               <div class="prof-card  interdisiplinario">
+
+               <div class="prof-card interdisiplinario">
                   <h4>Nutricionista</h4>
                   <p>Lic. Catalina Nigro</p>
-                  <h4>Prof. de Enfermería</h4>
+                  <h4>Equipo de Enfermería</h4>
                   <p>María Valle</p>
                   <p>Mercedes Marzano</p>
                   <p>Natalia Montenegro</p>
                </div>
             </div>
          </section>
-         <section id="ubicacion-horarios" class="info-grid">
+
+         <!-- UBICACION -->
+         <section id="ubicacion-horarios" class="section-premium info-grid premium-info fade-in-up">
             <article class="ubicacion">
-               <h2>Ubicación</h2>
-               <p>Nos encontramos en <strong>Calle 17 N°832, Balcarce, Buenos Aires</strong>.</p>
+               <p class="section-kicker">Ubicación</p>
+               <h2>Estamos en Balcarce</h2>
+               <p>Calle 17 N°832, Balcarce, Buenos Aires.</p>
                <div class="mapa-responsive">
                   <iframe
                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3134.622263769866!2d-58.24932272413737!3d-37.84807107197196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959fdfa2f4f0c7c1%3A0xd36c0a57fd4c31cb!2sC.%2017%20832%2C%20B7630CKP%20Balcarce%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1721215142689"
@@ -220,38 +285,84 @@
             </article>
 
             <article class="horarios">
-               <h2>Horarios de Atención</h2>
-               <p>Atendemos con turnos programados en los siguientes días y horarios:</p>
+               <p class="section-kicker">Horarios</p>
+               <h2>Atención con turnos programados</h2>
                <ul>
                   <li>Lunes a Viernes: 8:00 a 12:00 hs</li>
                   <li>Lunes a Viernes: 14:00 a 16:00 hs</li>
                   <li>Turnos especiales: consultar disponibilidad</li>
                </ul>
-
             </article>
          </section>
 
       </main>
-      <section id="contacto">
-         <h2>Contacto</h2>
-         <h3>Solicitá tu turno o hacé una consulta:</h3>
-         <a href="https://wa.me/2266441520" target="_blank" class="btn-wp">WhatsApp</a>
-         <h3>Email</h3>
-         <a href="https://mail.google.com/mail/?view=cm&to=endoscopiasideb@gmail.com" target="_blank" class="btn-wp">
-            Enviar Email
-         </a>
-      </section>
-      <footer>
-            <p>© 2025 IDEB. Todos los derechos reservados.</p>
-            <div style="margin-top: 0.5rem;">
-             
-               <a href="https://wa.me/2266441520" target="_blank">
-                  <img src="img/whatsapp.png" alt="icono de wp" width="50" height="50" style="vertical-align: middle;">
-               </a>
-               <a href="https://instagram.com/ideb_balcarce" target="_blank" aria-label="Instagram">
-                  <img src="img/icons8-instagram-48.png" alt="Instagram" width="50" height="50" style="vertical-align: middle;">
-               </a>
+      <!-- PREGUNTAS FRECUENTES -->
+      <section id="faq" class="section-premium faq-section fade-in-up">
+         <div class="section-header">
+            <p class="section-kicker">Preguntas frecuentes</p>
+            <h2>Información útil para pacientes</h2>
+            <p>Respondemos algunas de las consultas más habituales antes de solicitar un turno.</p>
+         </div>
+      
+         <div class="faq-container">
+            <div class="faq-item">
+               <button class="faq-question">¿Necesito orden médica para realizar un estudio?</button>
+               <div class="faq-answer">
+                  <p>Dependerá del tipo de práctica y de la cobertura médica. Si tenés dudas, podés consultarnos antes de
+                     solicitar tu turno.</p>
+               </div>
             </div>
+      
+            <div class="faq-item">
+               <button class="faq-question">¿Atienden obras sociales?</button>
+               <div class="faq-answer">
+                  <p>Sí, trabajamos con distintas obras sociales y también atendemos pacientes particulares.</p>
+               </div>
+            </div>
+      
+            <div class="faq-item">
+               <button class="faq-question">¿Cómo recibo las indicaciones para mi estudio?</button>
+               <div class="faq-answer">
+                  <p>Podés descargarlas desde la sección de documentación o solicitarlas directamente por WhatsApp.</p>
+               </div>
+            </div>
+      
+            <div class="faq-item">
+               <button class="faq-question">¿Debo asistir acompañado/a?</button>
+               <div class="faq-answer">
+                  <p>En algunos procedimientos con sedación sí, por lo que te recomendamos consultarlo previamente según el
+                     estudio indicado.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="contacto-premium fade-in-up">
+         <p class="section-kicker">Contacto</p>
+         <h2>Solicitá tu turno o realizá una consulta</h2>
+         <p>Estamos para ayudarte con turnos, estudios e indicaciones previas.</p>
+
+         <div class="contacto-botones">
+            <a href="https://wa.me/2266441520" target="_blank" class="btn-principal">WhatsApp</a>
+            <a href="https://mail.google.com/mail/?view=cm&to=endoscopiasideb@gmail.com" target="_blank"
+               class="btn-secundario">Enviar Email</a>
+         </div>
+      </section>
+
+      <footer>
+         <p>© 2025 IDEB. Todos los derechos reservados.</p>
+
+         <div style="margin-top: 0.5rem;">
+            <a href="https://wa.me/2266441520" target="_blank">
+               <img src="img/whatsapp.png" alt="icono de wp" width="50" height="50" style="vertical-align: middle;">
+            </a>
+            <a href="https://instagram.com/ideb_balcarce" target="_blank" aria-label="Instagram">
+               <img src="img/icons8-instagram-48.png" alt="Instagram" width="50" height="50"
+                  style="vertical-align: middle;">
+            </a>
+         </div>
+
          <section class="creditos">
             <p>
                Desarrollado por
@@ -261,69 +372,103 @@
                💻
             </p>
          </section>
-
       </footer>
-      
 
+     <script>
+      // MENU MOBILE
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
 
-
-
-      <script>
-         function openModal(id) {
-            document.getElementById(id).style.display = 'block';
-         }
-         function closeModal(id) {
-            document.getElementById(id).style.display = 'none';
-         }
-         window.onclick = function (event) {
-            document.querySelectorAll('.modal').forEach(modal => {
-               if (event.target === modal) modal.style.display = 'none';
-            });
-         }
-         document.querySelector('.menu-toggle').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('show');
+      if (menuToggle && navLinks) {
+         menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
          });
+      }
 
-         function openModal(id) {
-            const modal = document.getElementById(id);
+      // MODALES
+      function openModal(id) {
+         const modal = document.getElementById(id);
+         if (modal) {
             modal.classList.remove('hide');
             modal.classList.add('show');
             modal.style.display = 'flex';
          }
+      }
 
-         function closeModal(id) {
-            const modal = document.getElementById(id);
+      function closeModal(id) {
+         const modal = document.getElementById(id);
+         if (modal) {
             modal.classList.remove('show');
             modal.classList.add('hide');
             setTimeout(() => {
                modal.style.display = 'none';
-            }, 300); // duración de la animación
+            }, 300);
          }
+      }
 
-         function toggleText(textId, btn) {
-            const textEl = document.getElementById(textId);
-            const isCollapsed = textEl.classList.contains('collapsed');
+      // VER MÁS / VER MENOS EN MODALES
+      function toggleText(textId, btn) {
+         const textEl = document.getElementById(textId);
+         if (!textEl) return;
 
-            if (isCollapsed) {
-               textEl.classList.remove('collapsed');
-               textEl.classList.add('expanded');
-               btn.textContent = 'Ver menos';
-            } else {
-               textEl.classList.remove('expanded');
-               textEl.classList.add('collapsed');
-               btn.textContent = 'Ver más';
-            }
+         const isCollapsed = textEl.classList.contains('collapsed');
+
+         if (isCollapsed) {
+            textEl.classList.remove('collapsed');
+            textEl.classList.add('expanded');
+            btn.textContent = 'Ver menos';
+         } else {
+            textEl.classList.remove('expanded');
+            textEl.classList.add('collapsed');
+            btn.textContent = 'Ver más';
          }
+      }
 
-         // Cerrar modal con tecla ESC
-         window.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-               document.querySelectorAll('.modal.show').forEach(modal => {
-                  closeModal(modal.id);
-               });
+      // CERRAR MODAL AL HACER CLICK AFUERA
+      window.addEventListener('click', function (event) {
+         document.querySelectorAll('.modal').forEach(modal => {
+            if (event.target === modal) {
+               modal.style.display = 'none';
             }
          });
-      </script>
+      });
+
+      // CERRAR MODAL CON ESC
+      window.addEventListener('keydown', (e) => {
+         if (e.key === 'Escape') {
+            document.querySelectorAll('.modal.show').forEach(modal => {
+               closeModal(modal.id);
+            });
+         }
+      });
+
+      // FAQ DESPLEGABLE
+      document.querySelectorAll('.faq-question').forEach(button => {
+         button.addEventListener('click', () => {
+            const item = button.parentElement;
+            item.classList.toggle('active');
+         });
+      });
+
+      // ANIMACIONES AL HACER SCROLL
+      const observer = new IntersectionObserver((entries) => {
+         entries.forEach(entry => {
+            if (entry.isIntersecting) {
+               entry.target.classList.add('show');
+            }
+         });
+      }, {
+         threshold: 0.15
+      });
+
+      document.querySelectorAll('.fade-in-up').forEach(el => {
+         observer.observe(el);
+      });
+   </script>
+      <!-- Botón flotante WhatsApp -->
+      <a href="https://wa.me/2266441520" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+         <img src="img/whatsapp.png" alt="WhatsApp">
+      </a>
 
    </body>
 
