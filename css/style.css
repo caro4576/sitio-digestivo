@@ -138,6 +138,11 @@ img {
   margin: 2rem 0 3rem;
   box-shadow: var(--shadowSuave);
 }
+.hero-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .hero-kicker,
 .section-kicker {
