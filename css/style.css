@@ -833,4 +833,157 @@ footer {
     justify-content: center;
   }
 }
+/* =========================
+   NOVEDADES IDEB
+   GASTROENDO 2026
+========================= */
 
+.novedades-section {
+  overflow: hidden;
+}
+
+.novedad-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  gap: 2.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f5fbfc 100%);
+  border: 1px solid var(--colorBorde);
+  border-radius: 24px;
+  box-shadow: var(--shadowSuave);
+}
+
+.novedad-imagen {
+  min-height: 380px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #eaf3f4;
+}
+
+.novedad-imagen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.novedad-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.novedad-etiqueta {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.55rem 0.9rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  background: rgba(31, 164, 169, 0.1);
+  color: var(--colorPrimario);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.novedad-contenido h3 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.4rem, 2vw, 1.9rem);
+  line-height: 1.35;
+}
+
+.novedad-contenido>p {
+  margin-bottom: 1rem;
+}
+
+.novedad-datos {
+  display: grid;
+  gap: 1rem;
+  margin: 1.2rem 0 1.5rem;
+  padding: 1.2rem;
+  background: #ffffff;
+  border: 1px solid var(--colorBorde);
+  border-radius: 16px;
+}
+
+.novedad-dato {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.novedad-icono {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(31, 164, 169, 0.1);
+  color: var(--colorPrimario);
+  font-size: 1.5rem;
+}
+
+.novedad-dato strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--colorB);
+}
+
+.novedad-dato p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.novedad-boton {
+  align-self: flex-start;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .novedad-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .novedad-imagen,
+  .novedad-imagen img {
+    min-height: 300px;
+    max-height: 450px;
+  }
+
+  .novedad-contenido {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .novedad-card {
+    padding: 1rem;
+  }
+
+  .novedad-imagen,
+  .novedad-imagen img {
+    min-height: 240px;
+  }
+
+  .novedad-contenido {
+    padding: 0.25rem;
+  }
+
+  .novedad-boton {
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .novedad-datos {
+    padding: 1rem;
+  }
+}
